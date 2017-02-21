@@ -10,10 +10,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button analogButton, digitalButton;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         analogButton.setOnClickListener(this);
         digitalButton = (Button) findViewById(R.id.button_digital);
         digitalButton.setOnClickListener(this);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setActionBar(toolbar);
+        getActionBar().setTitle("Clock");
+        toolbar.setSubtitle("tells the time");
+        toolbar.setLogo(R.drawable.time);
     }
 
     @Override
