@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.gmuras.fragmentexamplemenuclock.MainActivity">
+    <item
+        android:id="@+id/menu_date"
+        android:orderInCategory="150"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/time"
+        android:title="Date and Time" />
+
+    <item
+        android:id="@+id/menu_location"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/location"
+        android:title="Location" />
+
+    <item
+        android:id="@+id/menu_sleep"
+        android:orderInCategory="50"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/sleep"
+        android:title="Sleep" />
+</menu>
