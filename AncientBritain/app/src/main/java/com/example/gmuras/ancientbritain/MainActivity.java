@@ -1,6 +1,8 @@
 package com.example.gmuras.ancientbritain;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -20,6 +22,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mainOnClickListener = new MainOnClickListener(this);
+
         recyclerView = (RecyclerView) findViewById(R.id.main_recycler_view);
         recyclerView.setHasFixedSize(true);
 
@@ -37,5 +41,20 @@ public class MainActivity extends Activity {
 
         RecyclerView.Adapter adapter = new MainAdapter(mainData);
         recyclerView.setAdapter(adapter);
+    }
+
+
+    private class MainOnClickListener implements View.OnClickListener {
+        private final Context context;
+
+        private MainOnClickListener(Context c) {
+            this.context = c;
+        }
+
+        @Override
+        public void onClick(View v) {
+            currentItem = recyclerView.getChildPosition(v);
+            startActivity(new Intent(getApplicationContext(), DetailActivity.class));
+        }
     }
 }
