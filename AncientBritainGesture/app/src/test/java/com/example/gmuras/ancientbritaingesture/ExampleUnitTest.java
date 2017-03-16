@@ -1,4 +1,4 @@
-package com.example.gmuras.ancientbritain;
+package com.example.gmuras.ancientbritaingesture;
 
 import org.junit.Test;
 

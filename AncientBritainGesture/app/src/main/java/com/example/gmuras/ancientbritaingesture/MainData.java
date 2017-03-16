@@ -1,4 +1,4 @@
-package com.example.gmuras.ancientbritain;
+package com.example.gmuras.ancientbritaingesture;
 
 /**
  * Created by gmuras on 27/02/17.

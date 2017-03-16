@@ -1,4 +1,4 @@
-package com.example.gmuras.ancientbritain;
+package com.example.gmuras.ancientbritaingesture;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.gmuras.ancientbritain", appContext.getPackageName());
+        assertEquals("com.example.gmuras.ancientbritaingesture", appContext.getPackageName());
     }
 }
