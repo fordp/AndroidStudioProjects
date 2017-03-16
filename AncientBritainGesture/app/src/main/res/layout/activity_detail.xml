@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="3"
+        app:srcCompat="@drawable/wall_large"
+        android:id="@+id/detail_image" />
+
+    <TextView
+        android:text="Name"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/detail_name" />
+
+    <TextView
+        android:text="Distance"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/detail_distance" />
+
+    <TextView
+        android:text="Text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:maxLines = "100"
+        android:scrollbars = "vertical"
+        android:id="@+id/detail_text" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        app:srcCompat="@drawable/web_icon"
+        android:id="@+id/detail_web_link" />
+</LinearLayout>
